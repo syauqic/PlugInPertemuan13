@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Membuat Image Slider Menggunakan jQuery</title>
+        <meta name="description" content="Sederhana dan sangat powerful:Slide slider">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <!--Instalasi font Lato dari Google, abaikan jika tidak terkoneksi internet-->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+        <!--Include jquery-->
+        <script src="jquery-3.6.0.js"></script>
+        <script src="jquery-migrate-1.2.1.min.js"></script>
+
+        <!--Include the slider scripts-->
+        <script type="text/javascript" src="jquery.simpleslider.js"></script>
+        <script type="text/javascript" src="backstretch.js"></script>
+        <script type="text/javascript" src="custom.js"></script>
+    </head>
+
+    <body>
+        <header id="top">
+            <div id="logo"><span class='logo'>Slider menggunakan jQuery</span><span class='dynamic'></span></div>
+        </header>
+
+        <div class='pagewrap'>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v11.0" nonce="EgXYMb0t"></script>
+
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" 
+            data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+
+            <div class="githubbuttons">
+                <iframe src="http://ghbtns.com/github-btn.html?user=syauqic&repo=PlugInPertemuan13&type=watch&count=true"
+                allowtranparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=syauqic&repo=PlugInPertemuan13&type=fork&count=true"
+                allowtranparency="true" frameborder="0" scrolling="0" width="85" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=syauqic&repo=PlugInPertemuan13&type=follow"
+                allowtranparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
+                <script async defer src="https://buttons.github.io/buttons.js"></script>
+            </div>
+            
+            <div class='pageblock' id='fullscreen'>
+                <div class='slider'>
+                    <div class='slide' id="satu">
+                        <div class='slidecontent'>
+                            <span class="headersur">Sangat powerfull dan sederhana diwaktu yang sama</span>
+                            <h1>SLIDE PERTAMA</h1>
+                            <div class="button" onclick="mainslider.nextSlide();">Lihat betapa sederhananya</div>
+                        </div>
+                    </div>
+                    <div class='slide' id="dua">
+                        <div class='slidecontent'>
+                            <span class="headersur"></br></br>Masukkan semua disini</span>
+                            <h1>SLIDE KEDUA</h1>
+                            <div class="text">
+                                <p>Siapkan dan download file simpleslider.js, jquery.touchswipe.js dan transit.js</p>
+                                <xmp>
+                                    <script src="jquery-3.6.0.js"></script>
+                                    <script src="jquery-migrate-1.2.1.min.js"></script>
+                                    <script src="text/javascript" src="transit.js"></script>
+                                    <script src="text/javascript" src="jquery.touchSwipe.js"></script>
+                                    <script src="text/javascript" src="jquery.simpleslider.js"></script>
+                                </xmp>
+
+                                <div class="button" onclick="mainslider.nextSlide();">Sudah? Ayo Lanjutkan!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='slide' id="tiga">
+                        <div class='slidecontent'>
+                            <span class="headersur">Sudah siap ?</span>
+                            <h1>Langkah Berikutnya</h1>
+                            <div class="text">
+                                <p>Masukkan kode ini di HTML, cek <a href="https://github.com"
+                                target="_BLANK">Github README</a>Contoh HTML</p>
+                                <xmp>$(document).ready(function(){
+                                    $(".slider").simpleSlider();
+                                });</xmp>
+                                <div class="button" onclick="mainslider.nextSlide();">Selesai? Lanjutkan lagi!</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class='slide' id="empat">
+                        <div class='slidecontent'>
+                            <span class="headersur">Belum Selesai</span>
+                            <h1>LIHAT</h1>
+                            <div class="text">
+                                <p>Slider Belum Selesai Yaa, Mau lihat opsi yang lain?</p>
+                                <p>Ada methods, triggers dan tracker yang bisa dikonfigurasikan</p>
+
+                                <div class="button" onclick="mainslider.nextSlide();">Cek?</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class='slide' id="lima">
+                        <div class='slidecontent'>
+                            <span class="headersur">Masih Satu Slide Lagi</span>
+                            <h1>Slide Kelima</h1>
+                            <div class="text">
+                                <p>Gimana kabarnya? Semoga Baik Baik aja ya!!</p>
+                            </div>
+                            <div class="button" onclick="mainslider.nextSlide();">Next gais</div>
+                        </div>
+                    </div>
+                    <div class='slide' id="enam">
+                        <div class='slidecontent'>
+                            <span class="headersur">Sudah Selesai</span>
+                            <h1>Slide Enam</h1>
+                            <div class="text">
+                                <p>Tetap Semangat yaaaaa, jaga kesehatannya!!</p>
+                            </div>
+                            <div class="button"><a href="https://github.com"
+                                target="_BLANK">Kalau mau tau lebih lanjut klik ini!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy">
+                Project: <a href="https://www.facebook.com/syauqi.benaputra/" rel="publisher">Abang Mohammad Syauqi</a>
+                <a href="https://github.com/syauqic">Github: Abang Mohammad Syauqi</a>
+            </div>
+
+        </div>
+    </body>
+</html>
